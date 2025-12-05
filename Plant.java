@@ -11,7 +11,11 @@ public class Plant {
 
     @Override
     public String toString() {
-
+        if (flowers) { // For plants with a member variable indicating they produce flowers
+            return "This plant is called a \"" + name + "\", costs $" + price + " and does produce flowers";
+        }
+        // False case
+        return "This plant is called a \"" + name + "\", costs $" + price + " and does NOT produce flowers";
     }
 
     public void printBill(int plantsToOrder) {
