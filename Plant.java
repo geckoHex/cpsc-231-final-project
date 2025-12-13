@@ -6,7 +6,13 @@ public class Plant {
     protected boolean flowers;
     protected String name;
 
-    public Plant(String name, double price, boolean flowers) {
+    public Plant() {
+        this.name = "Unknown";
+        this.flowers = false;
+        this.price = 0.00;
+    }
+
+    public Plant(double price, boolean flowers, String name) {
         this.name = name;
         this.price = price;
         this.flowers = flowers;
